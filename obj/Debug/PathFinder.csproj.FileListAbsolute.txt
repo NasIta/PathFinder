@@ -1,0 +1,8 @@
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.csprojResolveAssemblyReference.cache
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.MainForm.resources
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.csproj.GenerateResource.Cache
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\PathFinder.exe.config
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\PathFinder.exe
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\PathFinder.pdb
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.exe
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.pdb

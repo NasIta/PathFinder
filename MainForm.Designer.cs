@@ -27,6 +27,10 @@ namespace PathFinder
 		private System.Windows.Forms.NumericUpDown numericVertexCount;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.NumericUpDown numericConnectionsCount;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.CheckBox graphicsOutputOn;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.CheckBox ApfCheckBox;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -62,6 +66,10 @@ namespace PathFinder
 			this.numericVertexCount = new System.Windows.Forms.NumericUpDown();
 			this.label2 = new System.Windows.Forms.Label();
 			this.numericConnectionsCount = new System.Windows.Forms.NumericUpDown();
+			this.label3 = new System.Windows.Forms.Label();
+			this.graphicsOutputOn = new System.Windows.Forms.CheckBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.ApfCheckBox = new System.Windows.Forms.CheckBox();
 			((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericVertexCount)).BeginInit();
@@ -77,6 +85,7 @@ namespace PathFinder
 			this.picture1.Location = new System.Drawing.Point(0, 22);
 			this.picture1.Name = "picture1";
 			this.picture1.Size = new System.Drawing.Size(500, 500);
+			this.picture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.picture1.TabIndex = 0;
 			this.picture1.TabStop = false;
 			this.picture1.Click += new System.EventHandler(this.Picture1Click);
@@ -146,6 +155,7 @@ namespace PathFinder
 			this.button1.TabIndex = 2;
 			this.button1.Text = "Find path";
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Visible = false;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// label1
@@ -194,13 +204,60 @@ namespace PathFinder
 			0,
 			0});
 			// 
+			// label3
+			// 
+			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label3.Location = new System.Drawing.Point(504, 74);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(193, 28);
+			this.label3.TabIndex = 3;
+			this.label3.Text = "Graphics output:";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// graphicsOutputOn
+			// 
+			this.graphicsOutputOn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.graphicsOutputOn.Checked = true;
+			this.graphicsOutputOn.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.graphicsOutputOn.Location = new System.Drawing.Point(703, 79);
+			this.graphicsOutputOn.Name = "graphicsOutputOn";
+			this.graphicsOutputOn.Size = new System.Drawing.Size(104, 23);
+			this.graphicsOutputOn.TabIndex = 5;
+			this.graphicsOutputOn.UseVisualStyleBackColor = true;
+			// 
+			// label4
+			// 
+			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label4.Location = new System.Drawing.Point(504, 102);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(193, 28);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Auto path finding:";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// ApfCheckBox
+			// 
+			this.ApfCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.ApfCheckBox.Checked = true;
+			this.ApfCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.ApfCheckBox.Location = new System.Drawing.Point(703, 107);
+			this.ApfCheckBox.Name = "ApfCheckBox";
+			this.ApfCheckBox.Size = new System.Drawing.Size(104, 23);
+			this.ApfCheckBox.TabIndex = 5;
+			this.ApfCheckBox.UseVisualStyleBackColor = true;
+			this.ApfCheckBox.CheckedChanged += new System.EventHandler(this.CheckBox1CheckedChanged);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
 			this.ClientSize = new System.Drawing.Size(812, 529);
+			this.Controls.Add(this.ApfCheckBox);
+			this.Controls.Add(this.graphicsOutputOn);
 			this.Controls.Add(this.numericConnectionsCount);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.numericVertexCount);
 			this.Controls.Add(this.label1);

@@ -53,6 +53,14 @@ namespace PathFinder.Model
 			{
 				vertexes[i] = Normilize(vertexes[i]);
 			}
+			
+			for (int y = 0; y < connections.GetLength(1); y++) for (int x = 0; x < connections.GetLength(0); x++) 
+			{
+				if (connections[x, y] != 0) 
+				{
+					connections[x, y] = Convert.ToInt32(Math.Round(vertexes[x].DistanceTo(vertexes[y]) / 10));
+				}
+			}
 		}
 		
 		public Point Normilize(Point p)

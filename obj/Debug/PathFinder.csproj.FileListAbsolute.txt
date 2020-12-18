@@ -6,3 +6,4 @@ C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\
 C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\PathFinder.pdb
 C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.exe
 C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\obj\Debug\PathFinder.pdb
+C:\Users\NasIta\Documents\SharpDevelop Projects\PathFinder\PathFinder\bin\Debug\NUnit.Framework.dll

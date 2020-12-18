@@ -51,7 +51,7 @@ namespace PathFinder.Model
 			
 			for (int i = 0; i < vertexes.Count; i++) 
 			{
-				vertexes[i] = Normilize(vertexes[i]);
+				vertexes[i] = vertexes[i].RandomizeBias(segmentation, border, 3d / 5d);
 			}
 			
 			for (int y = 0; y < connections.GetLength(1); y++) for (int x = 0; x < connections.GetLength(0); x++) 
@@ -61,12 +61,6 @@ namespace PathFinder.Model
 					connections[x, y] = Convert.ToInt32(Math.Round(vertexes[x].DistanceTo(vertexes[y]) / 10));
 				}
 			}
-		}
-		
-		public Point Normilize(Point p)
-		{
-			var rndPoint = new Point(rnd.Next(0, segmentation / 5 * 3), rnd.Next(0, segmentation / 5 * 3));
-			return new Point(p.X * segmentation + border + rndPoint.X, p.Y * segmentation + border + rndPoint.Y);
 		}
 	}
 }
